@@ -1,0 +1,14 @@
+1. Startseite zeigt folgende Elemente: 
+    - Suchzeile
+    - Buttons: Suche, Excel importieren, Exportieren
+    - Wenn suche erfolgreich: Tabelle mit Spalten: id, bez., 
+      beschr., anzahl, ort, (extra spalte mit bearbeitungsbutton)
+    - Wenn keine Teile gefunden: text ("Keine Teile gefunden") o.ä
+2. Wenn Suchbutton betätigt: Query durchsucht Name oder Beschreibung und zeigt Tabelle anzahl
+3. Wenn Button: importieren geklickt: Öffne neue Seite mit Dropfeld NUR für Exceldatei
+4. Wenn exportieren Button gedrückt: 
+    - Entweder gesuchte Ergebnisse exportieren oder gesamte Datenbank exportieren
+5. Wenn Bearbeitungsbutton in der jeweiligen Reihe gedrückt: 
+    -Neues Fenster öffnen mit Tabelle des Queryergebnisses
+     in der in jeder Zeile (Außer Anzahl) ein weiter Bearbeitungsbutton eingefügt ist
+    - Die Anzahl kann über ein Zählrad geändert werden

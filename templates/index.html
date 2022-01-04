@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block stylesheet %}
+<link rel= "stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+<link rel= "stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
+{% block head %}
+<title>Teiledatenbank</title>    
+{% endblock %}
+
+{% block body%}
+
+<div class = "content">
+    <div>
+        <h1>Teiledatenbank</h1>
+
+        <form action ="/" method="POST" autocomplete = "off">
+            <div class = "form_search">
+                <input type = "text" name = "search" id = "search" placeholder = "Suche nach Teil">
+                <button id = "search_button" type = "submit" name = "action" value = "Suche">Suche</button>
+            </div>
+            <div class = "form_button">
+                <button type = "submit" name = "action" value = "Hinzufügen">Hinzufügen</button>
+                <button type = "submit" name = "action" value = "Datenbank importieren">Datenbank importieren</button>
+                <button type = "submit" name = "action" value = "Datenbank exportieren">Datenbank exportieren</button>
+            </div>
+        
+        </form>
+    </div> 
+
+    <div class ="table">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Teilename</th>
+                <th>Teilebeschreibung</th>
+                <th>Lagerort</th>
+                <th>Menge</th>
+                <th></th>
+            </tr>
+            {% for part in parts %}
+                <tr>
+                    <td>{{part.id}}</td>
+                    <td>{{part.name}}</td>
+                    <td>{{part.description}}</td>
+                    <td>{{part.place}}</td>
+                    <td>{{part.number}}</td>
+                    <td>
+                        <a href = "/update/{{part.id}}">Update</a>
+                    <br>
+                        <a id = "delete" href = "/delete/{{part.id}}">Delete</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div> 
+</div>
+
+
+{% endblock %}
+
+ 

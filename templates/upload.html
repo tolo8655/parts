@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block stylesheet %}
+<link rel= "stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+<link rel= "stylesheet" href="{{ url_for('static', filename='css/upload.css') }}">
+{% endblock %}
+
+{% block head %}
+<title>Teiledatenbank</title>    
+{% endblock %}
+
+{% block body%}
+  <div>
+    <h1>Importiere Excel-Datei (.xls)</h1>
+  <div class = "content">   
+    <form method="post" action = "/upload" enctype="multipart/form-data">
+        <label>Wählen Sie eine Excel-Datei (.xls) von Ihrem Rechner aus:</label>  
+          <input id = "upload_datei" name="datei" type="file" accept="xls/*"> 
+        
+        <button  class = "submit" id = "submit_datei" type = "submit" value = ""> Hochladen</button>
+      </form>
+    </div>    
+</div> 
+{% endblock %}
+
+ 

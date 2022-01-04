@@ -1,0 +1,82 @@
+html{
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/main_bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+body{
+    font-family: 'Noto Sans Display', 'sans-serif';
+    width: 100%;
+    
+}
+
+html, body, .content {
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+  }
+
+form {
+    margin: auto;
+    width: 70%;
+    padding: 1%;
+}
+
+button{
+    padding: 4px 8px;
+    width: auto;
+}
+
+.form_button{
+    margin: auto;
+    width: auto;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.form_search{
+    margin: auto;
+    width: auto;
+    text-align: center;
+}
+
+.content{
+    height: 100vh;
+    background-color: transparent;
+    box-sizing: border-box;
+    border: 3px;
+    width: 60%;
+}
+
+input[type = "text"]{
+    margin: auto;
+    height: 22px;
+    padding: 5;
+    width: 70%;
+}
+
+#search_button{
+    width: 20%;
+    padding: 8px 3px;
+}
+
+#bg {
+    position: fixed; 
+    top: -50%; 
+    left: -50%; 
+    width: 200%; 
+    height: 200%;
+  }
+  #bg img {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto; 
+    min-width: 50%;
+    min-height: 50%;
+  }

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block stylesheet %}
+<link rel= "stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+<link rel= "stylesheet" href="{{ url_for('static', filename='css/nothing_found.css') }}">
+{% endblock %}
+
+{% block head %}
+<title>Teiledatenbank</title>    
+{% endblock %}
+
+{% block body%}
+<div>
+    <div>
+        <h2>Keine Teile gefunden</h2>
+    </div>
+
+    <div class = "back_button">
+        <button class="submit" type = "button" onclick = "history.back()">Zurück zur Suche</button>
+    </div>
+</div>
+{% endblock %}

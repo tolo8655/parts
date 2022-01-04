@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    {% block stylesheet %}{% endblock %}
+    {% block head %}{% endblock %}
+</head>
+
+
+
+<body>
+    
+    <div class = "nav-bar">
+        <ul>
+            <li><a href = "/"><img id = "nav-img" src = "../static/images/home_icon_white.png"></a></li>
+            <li>1</li>
+            <li>2</li>
+        </ul>    
+    </div>
+
+    {% block body %}
+    
+    
+    
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,149 @@
+html{
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/main_bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+body{
+    font-family: 'Noto Sans Display', 'sans-serif';
+    color: white;
+    font-size: 14px;
+    width: 100%;    
+}
+
+html, body{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.nav-bar{
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.626);
+    height: 40px;
+    line-height: 40px;
+}
+
+#nav-img{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#nav-img:hover{
+    width: 30px;
+    height: 30px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+li{ 
+    display: inline;
+    padding: 5px 3px;
+    margin: 10px 3px;
+}
+
+h1, h3{ 
+    color: white;
+    padding-top: 10px;
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color:rgba(241, 227, 143, 0.877)
+}
+
+br{
+    margin: 4px 0 4px 0;
+}
+
+button{
+    margin: 0.4% 1% 0.4% 1%;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgba(241, 227, 143, 0.877);
+    border-radius: 3px;
+    background-color:rgba(241, 227, 143, 0.877);
+}
+
+button:hover{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.submit{
+    box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.226);
+    transition-duration: 0.4s;
+}
+
+.submit:hover{
+    border: 1px solid white;
+    box-shadow: 0 10px 20px 0  rgba(255, 255, 255, 0.13);
+}
+
+table, th, td{
+    color: white;
+    font-size: 15px;
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 3%;
+    text-align: center;
+    padding: 6px 15px;
+    background-color: rgba(71, 77, 95, 0.562);
+}
+
+th {
+    font-size: 18px;
+    border-bottom: 2px solid white;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  label,
+  input {
+    /* In order to define widths */
+    display: inline-block;
+    margin-top: 3%;
+  }
+  
+  label {
+    width: 30%;
+    /* Positions the label text beside the input */
+    text-align: right;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  label+input {
+    width: 30%;
+    height: 22px; 
+    /* Large margin-right to force the next element to the new-line
+             and margin-left to create a gutter between the label and input */
+    margin: 0 15% 0 2%;
+  }
+
+  #delete:hover{
+      color: red;
+  }
